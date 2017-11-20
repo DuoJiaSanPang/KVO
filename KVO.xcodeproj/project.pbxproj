@@ -15,6 +15,8 @@
 		B68C1B301FBAE6CF00EF9C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C1B2F1FBAE6CF00EF9C93 /* main.m */; };
 		B68C1B3A1FBAE6CF00EF9C93 /* KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C1B391FBAE6CF00EF9C93 /* KVOTests.m */; };
 		B68C1B451FBAE6CF00EF9C93 /* KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C1B441FBAE6CF00EF9C93 /* KVOUITests.m */; };
+		B68C1B541FBAE6E900EF9C93 /* NSObject+DXKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C1B531FBAE6E900EF9C93 /* NSObject+DXKVO.m */; };
+		B6FEA0391FC2D051004193C1 /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FEA0381FC2D051004193C1 /* KVOObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		B68C1B401FBAE6CF00EF9C93 /* KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68C1B441FBAE6CF00EF9C93 /* KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOUITests.m; sourceTree = "<group>"; };
 		B68C1B461FBAE6CF00EF9C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68C1B521FBAE6E900EF9C93 /* NSObject+DXKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DXKVO.h"; sourceTree = "<group>"; };
+		B68C1B531FBAE6E900EF9C93 /* NSObject+DXKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DXKVO.m"; sourceTree = "<group>"; };
+		B6FEA0371FC2D051004193C1 /* KVOObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOObject.h; sourceTree = "<group>"; };
+		B6FEA0381FC2D051004193C1 /* KVOObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				B68C1B211FBAE6CF00EF9C93 /* AppDelegate.m */,
 				B68C1B231FBAE6CF00EF9C93 /* ViewController.h */,
 				B68C1B241FBAE6CF00EF9C93 /* ViewController.m */,
+				B68C1B521FBAE6E900EF9C93 /* NSObject+DXKVO.h */,
+				B68C1B531FBAE6E900EF9C93 /* NSObject+DXKVO.m */,
+				B6FEA0371FC2D051004193C1 /* KVOObject.h */,
+				B6FEA0381FC2D051004193C1 /* KVOObject.m */,
 				B68C1B261FBAE6CF00EF9C93 /* Main.storyboard */,
 				B68C1B291FBAE6CF00EF9C93 /* Assets.xcassets */,
 				B68C1B2B1FBAE6CF00EF9C93 /* LaunchScreen.storyboard */,
@@ -265,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FEA0391FC2D051004193C1 /* KVOObject.m in Sources */,
 				B68C1B251FBAE6CF00EF9C93 /* ViewController.m in Sources */,
 				B68C1B301FBAE6CF00EF9C93 /* main.m in Sources */,
+				B68C1B541FBAE6E900EF9C93 /* NSObject+DXKVO.m in Sources */,
 				B68C1B221FBAE6CF00EF9C93 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +443,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UPFHSUH9CX;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = KVO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KVO;
@@ -445,7 +458,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UPFHSUH9CX;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = KVO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KVO;
